@@ -22,19 +22,19 @@ const Reviews = () => {
 
   return (
    
-      <div>
-        {reviews.length > 0 && (
-          <ul>
-            {reviews.map(review => (
-              <ReviewPost key={review.id}>
-                <h3>Author: {review.author}</h3>
-                <p>{ review.content }</p>
-              </ReviewPost>
-            ))}
-          </ul>
-        )}
-        {reviews.length === 0 && <p>We don`t have any review for this movie</p>}
-      </div>
+    <div>
+      {reviews.length > 0 && (
+        <ul>
+          {reviews.map(review => (
+            <ReviewPost key={review.id}>
+              <h3>Author: {review.author}</h3>
+              <p>{ review.content }</p>
+            </ReviewPost>
+          ))}
+        </ul>
+      )}
+      {reviews.length === 0 && <p>We don`t have any review for this movie</p>}
+    </div>
   );
 }
 

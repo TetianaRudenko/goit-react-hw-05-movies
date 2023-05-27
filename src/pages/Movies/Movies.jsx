@@ -20,7 +20,6 @@ const Movies = () => {
     async function fetchMovies() {
       try {
         const data = await apiService('/search/movie', `&query=${query}`);
-        //console.log(data.results)
         setMovies(data.results);
       } catch (error) {
         console.log(error);
@@ -35,7 +34,6 @@ const Movies = () => {
     e.preventDefault();
     const form = e.target;
     if (form.elements.query.value === '') {
-      //console.log(form);
       return setSearchParams({});
     }
     setSearchParams({ query: form.elements.query.value });  

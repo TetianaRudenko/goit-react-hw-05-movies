@@ -18,7 +18,7 @@ const Cast = () => {
       }    
     }
 
-     fetchCast();
+    fetchCast();
   }, [movieId]);
 
   return (
@@ -42,6 +42,7 @@ const Cast = () => {
               <p> Character: { actor.character}</p>
             </li>
           ))}
+          
         </ActorsList>
       )}
       {actors.length === 0 && (

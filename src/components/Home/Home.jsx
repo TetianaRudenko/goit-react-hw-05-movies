@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { apiService } from "services/apiService";
 
 
-export const HomeComponent = ({data}) => {
+export const HomeComponent = () => {
   //useEffect(() => {
   // якщо потрібен запит HTTP
   //}, []) - при монтуванні 1раз

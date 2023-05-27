@@ -70,8 +70,6 @@ const MovieDetails = () => {
         <Outlet />
       </div>
 
-
-
     </>
   );
 };
